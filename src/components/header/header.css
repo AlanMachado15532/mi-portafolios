@@ -1,0 +1,74 @@
+header{
+    height: 100vh;
+    background: linear-gradient(rgba(5, 7, 12,0.20),
+    rgba(5, 7, 12,0.20)), url(../../assets/me.jpg);
+    background-size:100% 980px;
+    background-position: center; 
+    padding-top: 13rem;
+    overflow: hidden;
+   
+
+}
+
+.header__container{
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+/* ####################### CTA ################## */
+
+.cta{
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+/* ####################### HEADER SOCIAL ################## */
+
+.header__social{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 1rem;
+}
+
+/* ####################### MAS SOBRE MI ################## */
+
+.scroll__down{
+    font-size: 1.2rem;
+    text-decoration: underline 2px;
+    display: flex-end;
+    right: 0;
+    align-items: center;
+    position: absolute;
+    bottom: 1rem;
+}
+
+
+/* ############## MEDIA QUERIES (medium devices)############### */
+
+@media screen and (max-width: 1024px){
+    header{
+     height: 68vh;
+      
+    }
+
+}
+
+/* ############## MEDIA QUERIES (small devices)############### */
+
+@media screen and (max-width: 600px){
+    header{
+        height: 100vh;
+        width: 100%;
+    }
+
+    .header__social, .scroll__down {
+        display: none;
+    }
+}
